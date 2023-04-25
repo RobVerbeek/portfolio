@@ -23,7 +23,7 @@ gulp.task('copy-js', () =>
         .src(['node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'])
         .pipe(newer('./src/js'))
         .pipe(notify({ message: 'Copy JS files' }))
-        .pipe(gulp.dest('./dist/js'))
+        .pipe(gulp.dest('./src/js'))
 );
 
 // Compile sass into CSS (/src/css/)
