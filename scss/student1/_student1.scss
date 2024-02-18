@@ -49,9 +49,64 @@
     margin-bottom: 10%;
   }
   p span{
-    color: black;
+    color: darkcyan;
   }
   .smaller{
     font-size: 1.2rem;
+  }
+  .bento{
+    overflow: hidden;
+  }
+  .bento img{
+    max-width: 85%;
+    max-height: 40vh;
+  }
+  .bentobox div{
+    max-height: 40vh;
+  }
+  .linux{
+    background-image: url("../assets/docker.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vh;
+    width: 100%;
+    filter: brightness(0.8);
+
+  }
+  .competemore{
+    background-image: url("../assets/CompeteMore.png");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+  }
+  .utopia{
+    background-image: url("../assets/Picture1.png");
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.8);
+
+  }
+  .qliksense{
+    background-image: url("../assets/Qliksense.png");
+    height: 40vh;
+    width: 95%;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    filter: brightness(0.7);
+
+  }
+  .qliksense:hover, .utopia:hover, .competemore:hover, .linux:hover{
+    filter: brightness(1);
+    border: 5px solid darkcyan;
+  }
+  .title{
+    color: white;
+    text-shadow: black 3px 3px 15px;
   }
 }
