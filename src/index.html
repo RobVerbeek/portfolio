@@ -3,76 +3,121 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css" />
         <title>1ITF Sass BS5 project</title>
     </head>
-    <body>
-        <main class="container">
-            <header class="py-1">
-                <h1>
-                    Sass - Bootstrap 5
-                    <small class="text-muted">project 1ITF</small>
-                </h1>
-                <hr class="mb-4" />
-            </header>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <p class="text-justify">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias, aliquid corporis deserunt eos
-                        exercitationem explicabo id molestiae nemo perspiciatis quasi ut vero voluptatibus? Ducimus enim expedita
-                        reprehenderit sit veritatis.
+    <body class="student1">
+
+        <nav class="navbar navbar-expand-lg sticky-top mx-5 my-2 bg-dark text-white">
+            <div class="container-fluid mx-5 my-2">
+                <h3 class="">Rob Verbeek</h3>
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbar-stuff" aria-controls="navbar-stuff"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between">
+                    <ul class="navbar-nav mb-2 justify-content-center col-10">
+                        <li>
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li>
+                            <a href="#projects" class="nav-link">Projects</a>
+                        </li>
+                    </ul>
+                    <a href="assets/CV_Rob_Verbeek.pdf" download="cv_Rob_Verbeek" class="button bg-primary rounded-2 text-center p-3 fw-bold text-uppercase">Download cv</a>
+                </div>
+            </div>
+        </nav>
+
+        <!--<section id="hero" class="mx-5">
+            <div class="px-4 py-5 mt-1 mb-1 text-center bento bg-dark text-white">
+                <h1 class="display-5 fw-bold">Student <span>Applied Computer Science</span></h1>
+                <h1 class="display-5 fw-bold">At <span>Thomas More</span></h1>
+            </div>
+        </section>-->
+        <section id="about" class="my-5 m-5 row">
+                <div class="card col-3 bg-dark bento">
+                    <div class="mt-5">
+                        <div class="card-title text-white">
+                            <h1 class="text-center mb-2">
+                                Hi! I'm <span>Rob Verbeek</span>
+                            </h1>
+                            <p class="text-center mb-5 text-secondary">Student Applied Computer Science</p>
+                        </div>
+                        <div class="card-img-top">
+                            <img class="w-75 rounded-5 mx-auto d-block" src="assets/20230112_141842_04.jpg" alt="">
+                        </div>
+                        <div class="mb-5 mt-2">
+                            <ul class="socials gap-3 d-flex justify-content-center mt-3 p-0">
+                                <li><a href=""><i class="button fa-brands fa-instagram bg-secondary text-white p-2 rounded-4"></i></a></li>
+                                <li><a href=""><i class="button fa-brands fa-linkedin-in bg-secondary text-white p-2 rounded-4"></i></a></li>
+                                <li><a href=""><i class="button fa-brands fa-github bg-secondary text-white p-2 rounded-4"></i></a></li>
+                            </ul>
+                            <a href="CV_Rob_Verbeek.html" target="_blank" rel="noreferrer noopener" class="rounded-5 fw-bold button d-flex justify-content-center w-50 mx-auto bg-primary p-3 rounded-2 text-white">View CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 ms-5">
+                    <h1>About Me</h1>
+                    <p>
+                        The concept phase of an application intrigues me. Learning about the client's vision and working out how to realize it is very enjoyable to me.
+                        Besides that I <span class="fw-bold">love visualisations</span>. From data to creating websites or designing applications. I believe being healthy brings happiness so <span class="fw-bold">fitness and cooking</span>
+                        healthy are a passion of mine.
+                    </p>
+                    <h3>
+                        But why IT?
+                    </h3>
+                    <p>
+                        This might be cliché, but I went into IT because I grew up using a lot of technology. After high school I first
+                        decided to work for a few years but after having built
+                        my own pc I thought it would be interesting to pursue IT more.
+
+                    </p>
+                    <h3>Ambitions</h3>
+                    <p>
+                        I can't shake the idea of making my own fitness application. Since one of my favorite hobbies is working
+                        out it would be amazing to develop my own app that lets me track progress and keep track of my routines.
+                    </p>
+                    <p>
+                        As for future jobs, I'm keeping myself <span class="fw-bold">open-minded</span>. A consultant, data analyst that
+                        creates visualizations or being involved in the concept/design phase for projects are all fields that
+                        intrigue me.
                     </p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="alert alert-primary alert-dismissible fade show">
-                        This is a primary alert
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                    <div class="alert alert-danger alert-dismissible fade show">
-                        This is a danger alert
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                    <div class="alert alert-success alert-dismissible fade show">
-                        This is a success alert
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                    <div class="alert alert-purple alert-dismissible fade show">
-                        This is a purple alert
-                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="d-grid gap-2">
-                        <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                            <i class="fa-solid fa-home"></i> Home
-                        </button>
-                        <button type="button" class="btn btn-danger"><i class="fa-solid fa-users"></i> Users</button>
-                        <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#imageModal">
-                            <i class="fa-solid fa-image"></i> Image modal
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </main>
+        </section>
 
-        <!-- Modal -->
-        <div class="modal fade" id="imageModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Image @ Ansgar Scheffold</h5>
-                    </div>
-                    <div class="modal-body">
-                        <img src="https://picsum.photos/id/95/640/427" class="img-fluid" alt="Photo by Kundan Ramisetti" />
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
+        <section id="projects" class="mx-5">
+            <h1 class="fw-bold text-center">Projects</h1>
+            <div class="">
+                <h3>Feathers and Fuselages</h3>
+                <p>
+                    Wildlife strikes can be a serious issue, over the last 33 years there have been many incidents
+                    because of wildlife strikes. I visualized the recorded data from these wildlife strikes
+                    on airplanes in the US into several sheets of graphs. The goal of the project was to showcase the impact
+                    they can have on not only the economy but also the passengers aboard the airplanes.
+                    This project was part of the data visualization course during my studies.
+                </p>
             </div>
-        </div>
+            <div class="col-8 m-5">
+                <img class="img-fluid" src="assets/QlikSenseBrowser_dbKAGyzp5O.png" alt="...">
+            </div>
+            <div>
+                <h2>Utopia</h2>
+                <p>
+                    Utopia is a website created to help fresh graduates decide on what course they would like to pursue in
+                    higher education. This was a <span class="fw-bold">group project</span> in which we chose to make a game where the player would have
+                    to control the character and complete various objectives by writing code. <span class="fw-bold">My role</span> was to handle the
+                    <span class="fw-bold">visuals</span>. I created the maps in which the player moved in by <span class="fw-bold">coding, rendering
+                    and drawing</span> the maps with asset sets.
+                </p>
+                <img src="assets/Picture1.png" alt="">
+            </div>
+        </section>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
         <!--custom scripts ONLY external links to studentX.js-->
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

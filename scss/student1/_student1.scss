@@ -1,4 +1,54 @@
 .student1 {
-  // unique code for student 1
-  // Name student 1:
+  .bento{
+    border-radius: 25px;
+  }
+  li{
+    list-style: none;
+  }
+  span{
+    color: darkcyan;
+  }
+  nav {
+    border-radius: 25px;
+    li{
+      font-size: 1.5rem;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .button{
+    text-decoration: none;
+  }
+  .button:hover{
+    filter: brightness(0.7);
+    transition-duration: 0.2s;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .sticky-top{
+    top: 8px;
+  }
+  .nav-link:active,
+  .nav-link:focus{
+    color: white;
+  }
+  .nav-link:hover{
+    color: darkcyan;
+  }
+  .socials li a{
+    font-size: 3rem;
+  }
+  section{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  p span{
+    color: black;
+  }
 }
