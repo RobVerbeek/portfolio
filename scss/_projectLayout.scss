@@ -1,15 +1,32 @@
 // basic layout of all pages
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+h1,h2,h3,h4,h5 {
+  font-family: "Oswald",sans-serif;
+}
+p{
+  font-family: "Source Code Pro", sans-serif;
+}
 body{
-  //background-image: url("../assets/pexels-skylar-kang-6044820.jpg");
-  //background-size: cover;
-  //color: antiquewhite;
+  background-image: url("../assets/pexels-stephan-seeber-1054222.jpg");
+  background-size: cover;
   margin: 0% 10%;
+  background-color: #4f5050;
 }
 .cv{
   border: 5px solid darkcyan;
+}
+.carousel-item {
+  img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 20
+    % 50%;
+    filter: brightness(0.4);
+  }
 }

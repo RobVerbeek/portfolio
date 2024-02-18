@@ -22,7 +22,6 @@
                         <li>
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
-                        <li><a href="index.html" class="nav-link">About</a></li>
                         <li>
                             <a href="#" class="nav-link">Projects</a>
                         </li>
@@ -38,59 +37,165 @@
                         <h1 class="text-center fw-bold title">
                             Data Visualization
                         </h1>
-                    <!--<img src="assets/Qliksense.png" alt="" class="py-5 d-flex mx-auto">-->
                 </div>
             </div>
             <div class="col-5">
-                <div class="bg-primary bento me-5 utopia d-flex justify-content-center align-items-center">
+                <div type="button" data-bs-toggle="modal" data-bs-target="#Utopia" class="bg-primary bento me-5 utopia d-flex justify-content-center align-items-center">
                     <h1 class="text-center fw-bold title">
                         Utopia
                     </h1>
-                    <!--<img src="assets/Picture1.png" alt="" class="py-5 d-flex mx-auto">-->
                 </div>
             </div>
             <div class="col-5">
-                <div class="bg-dark bento ms-5 mt-4 linux d-flex justify-content-center align-items-center">
+                <div type="button" data-bs-toggle="modal" data-bs-target="#Docker" class="bg-dark bento ms-5 mt-4 linux d-flex justify-content-center align-items-center">
                     <h1 class="text-center fw-bold title">
                         Docker Stack
                     </h1>
-                    <!--<img src="assets/unsplash.jpg" alt="" class="py-5 d-flex mx-auto">-->
                 </div>
             </div>
             <div class="col-7">
-                <div class="bg-dark bento mt-4 mx-5 competemore d-flex justify-content-center align-items-center">
+                <div type="button" data-bs-toggle="modal" data-bs-target="#CompeteMore" class="bg-dark bento mt-4 mx-5 competemore d-flex justify-content-center align-items-center">
                     <h1 class="text-center fw-bold title">
                         CompeteMore
                     </h1>
-                        <!--<img src="assets/CompeteMore.png" alt="" class="d-flex mx-auto py-5">-->
                 </div>
             </div>
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Launch demo modal
+        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
         </button>
 
-        <!-- Modal -->
+        <!-- Modal Data vis-->
         <div class="modal fade bg-dark bg-opacity-25" id="DataVisualization" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl">
                 <div class="modal-content rounded-5">
                     <div class="modal-header bg-dark text-white border-0">
-                        <h1 class="modal-title" id="exampleModalLabel">Feathers & Fuselages</h1>
+                        <h1 class="modal-title" id="DataVisualizationLabel">Feathers & Fuselages</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body bg-dark text-white">
                         <div class="row">
-                            <!--<img src="assets/Qliksense.png" alt="" class="w-100">-->
                             <iframe src="https://www.youtube.com/embed/yx6LHCCAczc" width="420" height="315" frameborder="0"></iframe>
                             <p class="p-3">
                                 Wildlife strikes can be a serious issue, over the last 33 years there have been many incidents
-                                because of wildlife strikes. I visualized the recorded data from these wildlife strikes
-                                on airplanes in the US into several sheets of graphs. The goal of the project was to showcase the impact
+                                because of wildlife strikes. I used <span>Qlik Sense</span> to visualize the wildlife strikes on airplanes in the US.
+                                The goal of the project was to showcase the impact
                                 they can have on not only the economy but also the passengers aboard the airplanes.
                                 This project was part of the data visualization course during my studies.
                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-dark bg-opacity-25" id="Utopia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-5">
+                    <div class="modal-header bg-dark text-white border-0">
+                        <h1 class="modal-title" id="UtopiaLabel">Utopia Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-white">
+                        <div class="row">
+                            <div class="row">
+                                <iframe src="https://www.youtube.com/embed/pz9Cx3PESxc" width="420" height="315" frameborder="0"></iframe>
+                                <p class="fw-bold p-3">Voice-Over was done by a different Team Member</p>
+                            </div>
+                            <div>
+                                <p>
+                                    Utopia is a website created to help fresh graduates decide on what course they would like to pursue in
+                                    higher education. This project was handed out to multiple groups which each had to come up with an interesting
+                                    way of helping the graduates decide.
+                                    My <span>team</span> wanted to create a game where the player would have
+                                    to control the character and complete various objectives by writing code. <span class="fw-bold">My role</span> was to handle the
+                                    <span class="fw-bold">visuals</span>. I created the maps in which the player moved in by <span class="fw-bold">coding, rendering
+                                    and drawing</span> the maps with asset sets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-dark bg-opacity-25" id="Docker" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-5">
+                    <div class="modal-header bg-dark text-white border-0">
+                        <h1 class="modal-title" id="DockerLabel">Utopia Project</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-white">
+                        <div class="row">
+                                <iframe src="https://www.youtube.com/embed/PEoTFBykW6A" width="400" height="315" frameborder="0"></iframe>
+                                <p class="p-3">
+                                    This docker stack was made for the Linux Webservices course I followed. To complete the
+                                    project a containerized web page had to be setup. This web page runs on <span>Apache</span>
+                                    which communicates with an <span>SQL</span> database. These services are containerized in <span>Docker</span>. The Apache container will
+                                    communicate with the SQL container to retrieve the stored username and display it on the web page.
+                                    As a bonus task the apache container had to be <span>duplicated and loadbalanced</span>,
+                                    which I also managed to complete.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bg-dark bg-opacity-25" id="CompeteMore" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content rounded-5">
+                    <div class="modal-header bg-dark text-white border-0">
+                        <h1 class="modal-title" id="CompeteMoreLabel">CompeteMore</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-dark text-white">
+                        <div class="row">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/CompeteMore.png" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption text-start"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/CompeteMore2.png" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/CompeteMore3.png" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption text-end"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                            <div>
+                                <p class="p-3 pb-0">
+                                    CompeteMore is a <span>PHP based website</span> which aims to give the students of Thomas More
+                                    an easy-to-use platform for hosting and participating in competitions. To create this
+                                    website I teamed up with fellow students. Firstly the design stage, where we had to
+                                    <span>talk to the client</span>. Analyze their needs and <span>design prototypes</span>.
+                                </p>
+                                <p class="fw-bold p-3">
+                                    The development of this project is still ongoing.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
