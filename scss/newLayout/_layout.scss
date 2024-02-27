@@ -1,0 +1,24 @@
+.layout{
+  p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+    filter: brightness(1.2);
+  }
+  nav{
+    font-size: 1rem;
+  }
+  .btn:hover{
+    a{
+      color: white;
+    }
+  }
+  span{
+    font-weight: bold;
+  }
+  .skills i{
+    font-size: 3rem;
+  }
+  .skills i:hover{
+    color: $jasmine;
+  }
+}
