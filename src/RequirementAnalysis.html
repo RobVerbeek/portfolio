@@ -38,70 +38,70 @@
         </head>
         <main class="pb-5">
             <div class="pt-5 mt-5 w-75 mx-auto">
-                <h1 class="">CompeteMore</h1>
-                <p class="pb-4" style="font-size: 1.2rem">
-                    CompeteMore is a <span>PHP based website</span> which aims to give the students of Thomas More
-                    an easy-to-use platform for hosting and participating in competitions. To create this
-                    website I teamed up with four other students.
-                </p>
-                <div class="pb-5">
-                    <div class="row shadow-lg">
-                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators bg-dark opacity-50">
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="assets/CompeteMore.png" class="" alt="">
-                                    <div class="container">
-                                        <div class="carousel-caption text-start"></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/CompeteMore2.png" alt="">
-                                    <div class="container">
-                                        <div class="carousel-caption"></div>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="assets/CompeteMore3.png" alt="">
-                                    <div class="container">
-                                        <div class="carousel-caption text-end"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark opacity-75 p-4" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark opacity-75 p-4" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
+                <section class="pb-5">
+                    <h1 class="">CompeteMore</h1>
+                    <p class="pb-4" style="font-size: 1.2rem">
+                        CompeteMore is a <span>PHP based website</span> which aims to give the students of Thomas More
+                        an easy-to-use platform for hosting and participating in competitions. To create this
+                        website I teamed up with four other students.
+                    </p>
+                    <img class="img-fluid shadow-lg" src="../assets/LandingPage.png" alt="">
+                </section>
                 <section class="my-5">
                     <h2 class="pb-3">Designing Compete More</h2>
+                    <div>
+                        <p>
+                            The project started off during project week, this week was dedicated entirely to working out a concept
+                            for the website, starting off from the documentation that was given to us.
+                            This contained use-case diagrams, use-case descriptions and low level prototypes.
+                            To make the best use of this information we first had a meeting with the client, where we
+                            asked questions to ensure we were on the same page.
+                        </p>
+                        <p>
+                            Using the documentation and information from the meeting our team got to work at designing the website,
+                            reworking the use-case diagram, adding or removing use-cases as we deemed necessary and creating higher level prototypes.
+                            I was in charge of creating a new use-case-diagram. I kept the functionalities on which we agreed should be kept and
+                            added the new functionalities we thought should be added.
+                        </p>
+                    </div>
                     <div class="d-flex justify-content-between">
                         <div class="col-6">
+                            <h2>The Use-Case Diagram</h2>
                             <p>
-                                The project started off during project week, this week was dedicated entirely to working out a concept
-                                for the website, starting off from the documentation that was given to us.
-                                This contained use-case diagrams, use-case descriptions and low level prototypes.
-                                To make the best use of this information we first had a meeting with the client, where we
-                                asked questions to ensure we were on the same page.
+                                The use case diagram displays all the functionalities, the people that will be able to access the application
+                                and the relationship between the users and which of the functionalities they have access to.
                             </p>
                             <p>
-                                Using the documentation and information from the meeting our team got to work at designing the website,
-                                reworking the use-case diagram, adding or removing use-cases as we deemed necessary and creating higher level prototypes.
-                                I was in charge of creating a new use-case-diagram. I kept the functionalities on which we agreed should be kept and
-                                added the new functionalities we thought should be added.
+                                This is important to get right from the design stage so that you don't run into any issues while
+                                developing the application. Of course these ideas can still change during development but the diagram functions as
+                                a solid starting point.
                             </p>
+                            <p>
+                                During the concept discussions we came to the conclusion that the following roles will be involved in the application.
+                            </p>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span>Guest(User):</span> This is anyone who is looking at the website without being logged in, they should only be able to view
+                                    the competitions and the results of finished competitions.
+                                </li>
+                                <li>
+                                    <span>Student:</span> Students are the core of this application, they will be the ones who create, join and vote for winners on
+                                    the competitions.
+                                </li>
+                                <li>
+                                    <span>Faculty Members:</span> These are the teachers that work at Thomas More, they will also be able to vote on the winners.
+                                </li>
+                                <li>
+                                    <span>Host:</span> The person who created the competition, this can only be done by external members which are verified and students.
+                                    The host is able to vote on the winner(s) and also flag invalid submissions from their competition.
+                                </li>
+                                <li>
+                                    <span>Admin:</span> They have a bunch of management functionalities and are the ones who approve a competition before it becomes
+                                    public.
+                                </li>
+                            </ul>
                         </div>
-                        <div>
+                        <div class="my-auto">
                             <img class="shadow-lg thumbnail" style="max-height: 500px" src="../assets/usecases.png" alt="Thumbnail Image" data-toggle="modal" data-target="#fullImageModal">
                             <!-- Full-size image modal -->
                             <div class="modal fade" id="fullImageModal" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel" aria-hidden="true">
@@ -121,6 +121,46 @@
                             </div>
                         </div>
                     </div>
+                    <div style="padding-top: 5%; padding-bottom: 5%;">
+                        <h2 class="pt-5 mt-5 mb-3">Prototypes</h2>
+                        <div class="row shadow-lg">
+                            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators bg-dark opacity-50">
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/CompeteMore.png" class="" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption text-start"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/CompeteMore2.png" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption"></div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/CompeteMore3.png" alt="">
+                                        <div class="container">
+                                            <div class="carousel-caption text-end"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon bg-dark opacity-75 p-4" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon bg-dark opacity-75 p-4" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </section>
                 <section>
                     <h2 class="pb-0 lh-1">Developing Compete More</h2>
@@ -128,7 +168,7 @@
                         For the creation of this website we used <span>Laravel</span>, this includes the usage of Livewire and PHP.
                     </p>
                     <div>
-                        <h3>Landing Page</h3>
+                        <h4>Landing Page</h4>
                         <p>
                             I chose to create the landing page for our website, first creating a layout that everyone was happy with.
                             To help with the creation of this, I decided to make use of <span>Tailwind css</span> and <span>Flowbite</span>.
@@ -166,7 +206,7 @@
                         </ul>
                     </div>
                     <div>
-                        <h3>Competition Page</h3>
+                        <h4>Competition Page</h4>
                         <p>
                             The natural follow-up to the landing page, this is where in-depth information of a competition gets displayed.
                             The idea behind this page is almost identical to the landing page, but in more detail.
@@ -184,9 +224,9 @@
                     </div>
                 </section>
                 <section>
-                    <h3>
+                    <h4>
                         Submission Page
-                    </h3>
+                    </h4>
                     <p>
                         This is a simple page which will let participants upload a competition submission.
                         They have to upload a thumbnail, and a file which corresponds to one of the allowed file types.
