@@ -6,10 +6,7 @@
   }
   nav{
     font-size: 1.5rem;
-    background-color: black;
-    a{
-      color: white;
-    }
+    background-color: white;
     border-radius: 25px;
     margin-top: 1%;
     a:hover{
@@ -30,12 +27,6 @@
   }
   .skills i:hover{
     color: $jasmine;
-  }
-  .nav-item .active{
-    color: $jasmine;
-  }
-  .navbar-brand:hover{
-    color: white;
   }
   .thumbnail {
     cursor: pointer; /* Change cursor to pointer on hover */
