@@ -1,11 +1,23 @@
 .layout{
   p{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.3rem;
     filter: brightness(1.2);
   }
   nav{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    background-color: black;
+    a{
+      color: white;
+    }
+    border-radius: 25px;
+    margin-top: 1%;
+    a:hover{
+      color: $vista;
+    }
+  }
+  .btn{
+    font-size: 1.2rem;
   }
   .btn:hover{
       color: white;
@@ -18,5 +30,14 @@
   }
   .skills i:hover{
     color: $jasmine;
+  }
+  .nav-item .active{
+    color: $jasmine;
+  }
+  .navbar-brand:hover{
+    color: white;
+  }
+  .thumbnail {
+    cursor: pointer; /* Change cursor to pointer on hover */
   }
 }

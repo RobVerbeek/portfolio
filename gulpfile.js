@@ -50,7 +50,7 @@ gulp.task('sass', () =>
 // Live-reload the browser
 gulp.task('browser-sync', () => {
     browserSync.init({
-        startPath: '/index(old).html',
+        startPath: '/index.html',
         port: 7777,
         server: {
             baseDir: './src',

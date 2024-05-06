@@ -9,7 +9,7 @@
     </head>
     <body class="layout">
         <head>
-            <nav class="navbar navbar-expand navbar-light" aria-label="Second navbar example">
+            <nav class="navbar navbar-expand navbar-light sticky-top" aria-label="Second navbar example">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">Rob Verbeek</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,6 +38,12 @@
         </head>
         <main class="pb-5">
             <div class="pt-5 mt-5 w-75 mx-auto">
+                <h1 class="">CompeteMore</h1>
+                <p class="pb-4" style="font-size: 1.2rem">
+                    CompeteMore is a <span>PHP based website</span> which aims to give the students of Thomas More
+                    an easy-to-use platform for hosting and participating in competitions. To create this
+                    website I teamed up with four other students.
+                </p>
                 <div class="pb-5">
                     <div class="row shadow-lg">
                         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -48,7 +54,7 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/CompeteMore.png" alt="">
+                                    <img src="assets/CompeteMore.png" class="" alt="">
                                     <div class="container">
                                         <div class="carousel-caption text-start"></div>
                                     </div>
@@ -77,32 +83,126 @@
                         </div>
                     </div>
                 </div>
-                <h1 class="pb-1">CompeteMore</h1>
-                <p>
-                    CompeteMore is a <span>PHP based website</span> which aims to give the students of Thomas More
-                    an easy-to-use platform for hosting and participating in competitions. To create this
-                    website I teamed up with fellow students to talk to a client.
-                    <span>Analyze</span> their needs and <span>design prototypes</span>.
-                    This project given during the Requirements Analysis course at Thomas More.
-                </p>
-                <h4>Design Phase</h4>
-                <p>
-                    The first step to creating an application is making sure the development team understands the client's
-                    needs. That's why in this stage we had a few meetings with the client where we had the opportunity to ask
-                    any questions my team members or myself might have had.
-                </p>
-                <p>
-                    Ensuring that the development team is on the same
-                    page as the client is key to avoiding problems during development.
-                    After the interviews I got to work. I took charge of creating the <span>use-case diagram</span>.
-                    This showcases all the functionalities that make up the website and which users are involved.
-                </p>
-                <div class="pt-4">
-                    <img src="../assets/usecases.png" alt="" class="mx-auto d-block shadow-lg">
-                </div>
+                <section class="my-5">
+                    <h2 class="pb-3">Designing Compete More</h2>
+                    <div class="d-flex justify-content-between">
+                        <div class="col-6">
+                            <p>
+                                The project started off during project week, this week was dedicated entirely to working out a concept
+                                for the website, starting off from the documentation that was given to us.
+                                This contained use-case diagrams, use-case descriptions and low level prototypes.
+                                To make the best use of this information we first had a meeting with the client, where we
+                                asked questions to ensure we were on the same page.
+                            </p>
+                            <p>
+                                Using the documentation and information from the meeting our team got to work at designing the website,
+                                reworking the use-case diagram, adding or removing use-cases as we deemed necessary and creating higher level prototypes.
+                                I was in charge of creating a new use-case-diagram. I kept the functionalities on which we agreed should be kept and
+                                added the new functionalities we thought should be added.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="shadow-lg thumbnail" style="max-height: 500px" src="../assets/usecases.png" alt="Thumbnail Image" data-toggle="modal" data-target="#fullImageModal">
+                            <!-- Full-size image modal -->
+                            <div class="modal fade" id="fullImageModal" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="fullImageModalLabel">Use-Case Diagram</h5>
+                                            <button type="button" class="border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <img src="../assets/usecases.png" class="img-fluid" alt="Full-size Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="pb-0 lh-1">Developing Compete More</h2>
+                    <p class="pt-0">
+                        For the creation of this website we used <span>Laravel</span>, this includes the usage of Livewire and PHP.
+                    </p>
+                    <div>
+                        <h3>Landing Page</h3>
+                        <p>
+                            I chose to create the landing page for our website, first creating a layout that everyone was happy with.
+                            To help with the creation of this, I decided to make use of <span>Tailwind css</span> and <span>Flowbite</span>.
+                            These speed up the process of making a layout considerably since I could start from premade components and alter
+                            them like I wanted.
+                        </p>
+                        <p>
+                            On the technical side, I requested the important display information from the database such as name, description, thumbnail,
+                            status and various deadlines of the competition. All this information got neatly displayed on a compact card,
+                            then it was onto the functionality.
+                        </p>
+                        <ul>
+                            <li>
+                                Different users (students, teachers, admins) have a different view of the page. For example <span>only students</span>
+                                are allowed to <span>participate</span> in competitions. So the registration functionality would only be visible
+                                to students.
+                            </li>
+                            <li>
+                                Students or verified members can propose competitions which the admins will first have to accept before
+                                they are shown to the public.
+                            </li>
+                            <li>
+                                During the registration phase students will be able to register.
+                            </li>
+                            <li>
+                                While the competition is ongoing, participants will be able to submit a submission.
+                            </li>
+                            <li>
+                                When the voting stage is active, all students on the platform can vote on a winner. But only if the competition
+                                has a public vote!
+                            </li>
+                            <li>
+                                Pagination to avoid a massive scrollbar.
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Competition Page</h3>
+                        <p>
+                            The natural follow-up to the landing page, this is where in-depth information of a competition gets displayed.
+                            The idea behind this page is almost identical to the landing page, but in more detail.
+                        </p>
+                        <p>
+                            Some additional features include the following:
+                        </p>
+                        <ul>
+                            <li>A timeline to show all of the deadlines</li>
+                            <li>News & Announcements, Admins and the host of the competition will be able to create or delete announcements</li>
+                            <li>Details such as the host, location and prize</li>
+                            <li>Tips & Guidelines</li>
+                            <li>A podium showcasing the winners once the competition has ended.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <h3>
+                        Submission Page
+                    </h3>
+                    <p>
+                        This is a simple page which will let participants upload a competition submission.
+                        They have to upload a thumbnail, and a file which corresponds to one of the allowed file types.
+                        If they want to, a comment section is available if they wish to share extra information about the submission.
+                    </p>
+                </section>
             </div>
         </main>
 
-        <script src="js/bootstrap.bundle.min.js"></script>
+        <!-- scripts -->
+        <div>
+            <script src="js/bootstrap.bundle.min.js"></script>
+            <script src="js/student1page2.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </div>
     </body>
 </html>

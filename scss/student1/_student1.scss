@@ -11,7 +11,7 @@
   nav {
     border-radius: 25px;
     li{
-      font-size: 1.5rem;
+      font-size:1.5rem;
     }
     a{
       color: white;
@@ -37,7 +37,7 @@
   }
   .nav-link:active,
   .nav-link:focus{
-    color: white;
+    color: $vista;
   }
   .nav-link:hover{
     color: darkcyan;
