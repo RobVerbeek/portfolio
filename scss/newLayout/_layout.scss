@@ -31,4 +31,15 @@
   .thumbnail {
     cursor: pointer; /* Change cursor to pointer on hover */
   }
+  .thumbnail-small{
+    cursor: pointer;
+    max-width: 350px;
+  }
+  .modal-xxl{
+    max-width: 70%;
+    margin: auto;
+  }
+  .pdf{
+    min-height: 86vh;
+  }
 }

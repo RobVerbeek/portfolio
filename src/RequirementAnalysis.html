@@ -48,23 +48,23 @@
                     <img class="img-fluid shadow-lg" src="../assets/LandingPage.png" alt="">
                 </section>
                 <section class="my-5">
-                    <h2 class="pb-3">Designing Compete More</h2>
                     <div>
-                        <p>
-                            The project started off during project week, this week was dedicated entirely to working out a concept
-                            for the website, starting off from the documentation that was given to us.
-                            This contained use-case diagrams, use-case descriptions and low level prototypes.
-                            To make the best use of this information we first had a meeting with the client, where we
-                            asked questions to ensure we were on the same page.
-                        </p>
-                        <p>
-                            Using the documentation and information from the meeting our team got to work at designing the website,
-                            reworking the use-case diagram, adding or removing use-cases as we deemed necessary and creating higher level prototypes.
-                            I was in charge of creating a new use-case-diagram. I kept the functionalities on which we agreed should be kept and
-                            added the new functionalities we thought should be added.
-                        </p>
+                        <h2 class="pb-3">Designing Compete More</h2>
+                            <p>
+                                The project started off during project week, this week was dedicated entirely to working out a concept
+                                for the website, starting off from the documentation that was given to us.
+                                This contained use-case diagrams, use-case descriptions and low level prototypes.
+                                To make the best use of this information we first had a meeting with the client, where we
+                                asked questions to ensure we were on the same page.
+                            </p>
+                            <p>
+                                Using the documentation and information from the meeting our team got to work at designing the website,
+                                reworking the use-case diagram, adding or removing use-cases as we deemed necessary and creating higher level prototypes.
+                                I was in charge of creating a new use-case-diagram. I kept the functionalities on which we agreed should be kept and
+                                added the new functionalities we thought should be added.
+                            </p>
                     </div>
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex justify-content-between pt-5 mt-5">
                         <div class="col-6">
                             <h2>The Use-Case Diagram</h2>
                             <p>
@@ -122,7 +122,14 @@
                         </div>
                     </div>
                     <div style="padding-top: 5%; padding-bottom: 5%;">
-                        <h2 class="pt-5 mt-5 mb-3">Prototypes</h2>
+                        <div class="mb-4">
+                            <h2 class="pt-5 mt-5 mb-3">Prototypes</h2>
+                            <p>
+                                These are prototypes that were made in Axure RP 10, they serve for giving the client a good idea of what the application
+                                will look like once it's finished. They can then give feedback on any big changes that they would like but of course
+                                these pages are also subject to change during the development stage.
+                            </p>
+                        </div>
                         <div class="row shadow-lg">
                             <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-indicators bg-dark opacity-50">
@@ -166,14 +173,14 @@
                     <h2 class="pb-0 lh-1">Developing Compete More</h2>
                     <p class="pt-0">
                         For the creation of this website we used <span>Laravel</span>, this includes the usage of Livewire and PHP.
+                        To speed up the styling process I decided to make use of <span>Tailwind css</span> and <span>Flowbite</span>.
                     </p>
-                    <div>
+                    <div class="pt-5">
                         <h4>Landing Page</h4>
                         <p>
-                            I chose to create the landing page for our website, first creating a layout that everyone was happy with.
-                            To help with the creation of this, I decided to make use of <span>Tailwind css</span> and <span>Flowbite</span>.
-                            These speed up the process of making a layout considerably since I could start from premade components and alter
-                            them like I wanted.
+                            I chose to create the landing page for our website, the core of the web application. This is what all the users first see when
+                            opening the website. Naturally this page has to be attractive, intuitive and easy to navigate for the users. Making a good first
+                            impression is important to keep the users engaged.
                         </p>
                         <p>
                             On the technical side, I requested the important display information from the database such as name, description, thumbnail,
@@ -205,7 +212,53 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <!-- Gallery -->
+                    <div class="d-flex justify-content-evenly py-5 mb-5">
+                        <div class="my-auto">
+                            <img class="shadow-lg thumbnail-small" src="../assets/LandingPage.png" alt="Thumbnail Image" data-toggle="modal" data-target="#LandingPage">
+                            <!-- Full-size image modal -->
+                            <div class="modal fade" id="LandingPage" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="LandingPageLabel">Guest View
+                                                <p>Images are randomized</p>
+                                            </h5>
+                                            <button type="button" class="border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <img src="../assets/LandingPage.png" class="img-fluid" alt="Full-size Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-auto">
+                            <img class="shadow-lg thumbnail-small" src="../assets/LandingPage2.png" alt="Thumbnail Image" data-toggle="modal" data-target="#LandingPage2">
+                            <!-- Full-size image modal -->
+                            <div class="modal fade" id="LandingPage2" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="LandingPageLabel2">Student View
+                                                <p>Images are randomized</p>
+                                            </h5>
+                                            <button type="button" class="border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center">
+                                            <img src="../assets/LandingPage2.png" class="img-fluid" alt="Full-size Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-5">
                         <h4>Competition Page</h4>
                         <p>
                             The natural follow-up to the landing page, this is where in-depth information of a competition gets displayed.
@@ -221,17 +274,66 @@
                             <li>Tips & Guidelines</li>
                             <li>A podium showcasing the winners once the competition has ended.</li>
                         </ul>
+                        <!-- Gallery -->
+                        <div class="d-flex justify-content-evenly py-5 mb-5">
+                            <div class="my-auto">
+                                <img class="shadow-lg thumbnail-small" src="../assets/CompetitionView.png" alt="Thumbnail Image" data-toggle="modal" data-target="#CompetitionView">
+                                <!-- Full-size image modal -->
+                                <div class="modal fade" id="CompetitionView" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="CompetitionViewLabel"> Competition Page
+                                                    <p>While competition is ongoing</p>
+                                                </h5>
+                                                <button type="button" class="border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <img src="../assets/CompetitionView.png" class="img-fluid" alt="Full-size Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-auto">
+                                <img class="shadow-lg thumbnail-small" src="../assets/CompetitionPodium.png" alt="Thumbnail Image" data-toggle="modal" data-target="#CompetitionPodium">
+                                <!-- Full-size image modal -->
+                                <div class="modal fade" id="CompetitionPodium" tabindex="-1" role="dialog" aria-labelledby="fullImageModalLabel2" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-xxl" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="CompetitionPodiumLabel">Competition Podium
+                                                    <p>After the competition has finished</p>
+                                                </h5>
+                                                <button type="button" class="border-0 bg-transparent" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true" style="font-size: 2rem">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <img src="../assets/CompetitionPodium.png" class="img-fluid" alt="Full-size Image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                 </section>
-                <section>
-                    <h4>
-                        Submission Page
-                    </h4>
-                    <p>
-                        This is a simple page which will let participants upload a competition submission.
-                        They have to upload a thumbnail, and a file which corresponds to one of the allowed file types.
-                        If they want to, a comment section is available if they wish to share extra information about the submission.
-                    </p>
+                <section class="pt-5">
+                    <div>
+                        <h4>
+                            Submission Page
+                        </h4>
+                        <p>
+                            This is a simple page which will let participants upload a competition submission.
+                            They have to upload a thumbnail, and a file which corresponds to one of the allowed file types.
+                            If they want to, a comment section is available if they wish to share extra information about the submission.
+                        </p>
+                    </div>
+                    <img class="img-fluid shadow-lg" src="../assets/SubmissionPage.png" alt="">
                 </section>
             </div>
         </main>

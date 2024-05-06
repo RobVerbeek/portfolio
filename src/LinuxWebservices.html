@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Project</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
     <body class="layout">
@@ -12,7 +12,8 @@
             <nav class="navbar navbar-expand navbar-light sticky-top" aria-label="Second navbar example">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html">Rob Verbeek</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                            aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
@@ -39,30 +40,34 @@
         </head>
         <main class="w-75 mx-auto pb-5">
             <div class="row">
-                <h1 class="pt-5 pb-1">Containerised Apache webserver</h1>
-                    <iframe src="https://www.youtube.com/embed/PEoTFBykW6A" width="400" height="415" frameborder="0"></iframe>
-                <div class="pt-3">
+                <div>
+                    <h1 class="pt-5 pb-1">Containerised Apache webserver</h1>
                     <p>
-                        The goal of this project was to learn the power of <span>Docker</span>. To do so I had research how Docker worked.
-                        I set up an <span>Apache</span> webserver that communicates with an <span>SQL</span> database, furthermore to prove my mastery of
-                        Docker I decided to add a  <span>Nginx loadbalancer</span> to this project.
-                    </p>
-                    <p class="fw-bold">
-                        During this project I learned various new technologies.
-                        <ul>
-                    <li>Creating images with dockerfiles</li>
-                    <li>Containerizing an application</li>
-                    <li>Making a Docker stack with Docker-compose</li>
-                    <li>Horizontal web-scaling with Nginx</li>
-                    <li>Ensuring data persistence</li>
-                </ul>
-                    </p>
-                    <p class="pt-3">
-                        Check out the document below for an in-depth explanation about all the steps I took to bring this
-                        project to fruition!
+                        The goal of this project was to learn the power of <span>Docker</span>. To do so I had to research how Docker worked.
+                        I set up an <span>Apache</span> webserver that communicates with an <span>SQL</span> database, furthermore to prove
+                        my mastery of Docker I decided to add a <span>Nginx loadbalancer</span> to this project.
                     </p>
                 </div>
-                    <iframe class="min-vh-100 pdf" src="../assets/Milestone-1-RV.pdf" frameborder="0"></iframe>
+                <div class="w-100">
+                    <iframe class="w-100" style="height: 512px" src="https://www.youtube.com/embed/PEoTFBykW6A" frameborder="1"></iframe>
+                </div>
+                <div class="pt-3">
+                    <h3>
+                        During this project I learned various new technologies.
+                    </h3>
+                    <ul>
+                        <li>Creating images with dockerfiles</li>
+                        <li>Containerizing an application</li>
+                        <li>Making a Docker stack with Docker-compose</li>
+                        <li>Horizontal web-scaling with Nginx</li>
+                        <li>Ensuring data persistence</li>
+                    </ul>
+                </div>
+                <p class="pt-3">
+                    Check out the document below for an in-depth explanation about all the steps I took to bring this
+                    project to fruition!
+                </p>
+                <iframe class="pdf mx-auto pdf" src="../assets/Milestone-1-RV.pdf"  frameborder="0"></iframe>
             </div>
         </main>
         <script src="js/bootstrap.bundle.min.js"></script>
