@@ -43,31 +43,85 @@
                 <div>
                     <h1 class="pt-5 pb-1">Containerised Apache webserver</h1>
                     <p>
-                        The goal of this project was to learn the power of <span>Docker</span>. To do so I had to research how Docker worked.
+                        The goal of this project was to learn the power of <span>Docker</span>. To do so I had to research how Docker
+                        worked.
                         I set up an <span>Apache</span> webserver that communicates with an <span>SQL</span> database, furthermore to prove
-                        my mastery of Docker I decided to add a <span>Nginx loadbalancer</span> to this project.
+                        my mastery of Docker I decided to add a <span>Nginx loadbalancer</span> to this project. The full documentation can
+                        be found
+                        at the bottom of this page.
                     </p>
                 </div>
                 <div class="w-100">
                     <iframe class="w-100" style="height: 512px" src="https://www.youtube.com/embed/PEoTFBykW6A" frameborder="1"></iframe>
                 </div>
-                <div class="pt-3">
-                    <h3>
-                        During this project I learned various new technologies.
-                    </h3>
-                    <ul>
-                        <li>Creating images with dockerfiles</li>
-                        <li>Containerizing an application</li>
-                        <li>Making a Docker stack with Docker-compose</li>
-                        <li>Horizontal web-scaling with Nginx</li>
-                        <li>Ensuring data persistence</li>
-                    </ul>
+                <div>
+                    <section class="pt-5 mt-5">
+                        <div class="pb-5">
+                            <div>
+                                <h2>Creating Images with a Dockerfile</h2>
+                                <p>
+                                    The first step towards creating this project is the creation of the images that will be put inside
+                                    docker containers.
+                                    These images should be easily buildable by anyone. That's why a Dockerfile is used. These files also
+                                    lets me customize
+                                    what dependencies are installed on the file so that there are no errors if someone else wants to use it.
+                                </p>
+                            </div>
+                            <div class="pt-5">
+                                <h2>
+                                    Containerizing the Application
+                                </h2>
+                                <p>
+                                    To make the entire application modular and containerized, I made a docker-compose file. This file lets
+                                    me use multiple images
+                                    which have been built and add them together into a "stack". For this project my stack consisted out of
+                                    an Apache, Nginx and SQL
+                                    container.
+                                </p>
+                                <p>
+                                    I used nginx as a load-balancer for my application. The idea was to have multiple containers running the
+                                    Apache service,
+                                    which the load-balancer would then distribute the incoming traffic to. The goal of this is to ensure
+                                    that the application stays
+                                    available during high load times and there is less of a bottleneck. You can see the load-balancer in
+                                    effect during the demo when the
+                                    hostname changes once the page is refreshed.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="m-auto" style="max-width: 75%;@media only screen and (min-width: 768px) {max-width: 100%}">
+                            <img class="img-fluid shadow-lg" style="max-height: 500px" src="../assets/DockerStack.png">
+                        </div>
+                    </section>
+                    <section class="my-5">
+                        <div>
+                            <h2>Data Persistence with Volumes</h2>
+                            <p>
+                                Data persistence is important, and since containers will lose all data when they are rebooted or worst case
+                                scenario, they crash,
+                                measures must be taken in order to not lose any data.
+                            </p>
+                            <p>
+                                To achieve this, I created volumes within Docker. These volumes will act as a storage space which won't be
+                                reset when a container
+                                goes offline. These volumes are created and linked to containers within the same docker-compose file that is
+                                used for the
+                                Docker-stack.
+                            </p>
+                        </div>
+                        <img class="img-fluid shadow-lg mt-5" src="../assets/DockerVolumes.png" alt="">
+                    </section>
+                    <section class="pt-5">
+                        <div class="pb-3">
+                            <h2>Project Documentation</h2>
+                            <p>
+                                Check out the document below for an in-depth explanation about all the steps I took to bring this
+                                project to fruition!
+                            </p>
+                        </div>
+                        <iframe class="mx-auto pdf" style="width: 100%" src="../assets/Milestone-1-RV.pdf" frameborder="0"></iframe>
+                    </section>
                 </div>
-                <p class="pt-3">
-                    Check out the document below for an in-depth explanation about all the steps I took to bring this
-                    project to fruition!
-                </p>
-                <iframe class="pdf mx-auto pdf" src="../assets/Milestone-1-RV.pdf"  frameborder="0"></iframe>
             </div>
         </main>
         <script src="js/bootstrap.bundle.min.js"></script>
