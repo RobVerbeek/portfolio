@@ -39,11 +39,17 @@
   .pdf{
     min-height: 86vh;
   }
+  figcaption{
+    font-size: 14px;
+  }
   @media screen and (min-width: 992px){
     p{
       font-size: 1.5rem;
-      line-height: 1.3rem;
+      line-height: 1.6rem;
       filter: brightness(1.2);
+    }
+    figcaption{
+      font-size: 20px;
     }
   }
 }

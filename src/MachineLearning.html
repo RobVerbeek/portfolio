@@ -40,7 +40,111 @@
                 </div>
             </nav>
         </head>
-        <main>
+        <main class="pt-5 mt-5 w-75 mx-auto">
+            <section class="pb-5">
+                    <h1>
+                        Cardiovascular Algorithm
+                    </h1>
+                    <p>
+                        This was a project for my Artificial Intelligence course and was held as a private Kaggle competition.
+                        By using the provided dataset, I had to come up with a prediction model that would attempt to <span>predict</span>
+                        if someone has <span>heart disease</span>. For this I used <span>Random Forest</span>.
+                    </p>
+                <div class="container-fluid p-0">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="../assets/RandomForestIllustration2.jpg" class="img-fluid w-100 shadow-lg" style="height: 500px; object-position: bottom; object-fit: cover;" alt="Banner Image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h2>
+                    EDA (Explorative Data Analysis)
+                </h2>
+                <p>
+                    The first step I took towards this project is exploring the data, it's crucial to understand the data in order to create
+                    a good prediction model. During the exploration of the data I can find outliers, any biases that might be in the data and
+                    find missing data which could cause problems during the training of the model.
+                </p>
+                <ul>
+                    <li>
+                        <span>Filtering Outliers:</span> Finding outliers and removing them can improve the accuracy of the model since it will be easier
+                        to generalize decisions.
+                    </li>
+                    <li>
+                        <span>Data Scaling:</span> Since the biomarkers have different ranges, the model might assign different weights to the features depending
+                        on their range, to combat this and make all features equal I used a standardscaler. This will change all the biomarkers to be within a range of
+                        0 to 1.
+                    </li>
+                    <li>
+                        <span>Visualization:</span> This helps to find obvious outliers and gives a clear oversight of all the data, to help with this I used
+                        SweetViz and MatPlotLib for Python.
+                    </li>
+                </ul>
+                <img class="img-fluid shadow-lg my-5" src="../assets/SweetViz.png" alt="">
+            </section>
+            <section>
+                <h2>
+                    Creating the model
+                </h2>
+                <p>
+                    The Random Forest is a popular learning method used in machine learning for classification and regression. Because this project
+                    is a classification problem, I chose to use random forest. Simply put the Random forest is a collection of decision trees that the algorithm
+                    creates, these decision trees all consist out of different decisions and the forest will find the best one from all these trees.
+                </p>
+                <p>
+                    In order to train the model I need a data set for training the model and another for validating the model. These datasets can be
+                    created from a single training data set, that means that I have a dataset with the features or biomarkers in this context and the answers. This set is then split usually
+                    80/20 in order to have a validation set of which you know the answers and can calculate the models accuracy against.
+                </p>
+                <p>
+                    In order to get a better result on the model I used hyperparameter tuning, tried various combinations of features and cross-validated the
+                    results of the Random Forest model.
+                </p>
+                <ul>
+                    <li>
+                        <span>Hyperparameter tuning:</span> Consists of various constrictions for the model, such as the depth of the tree,
+                    amount of trees in the forest and the strictness for the model to make decisions.
+                    </li>
+                    <li>
+                        <span>Features:</span> Just because you are given a dozen or dozens of biomarkers doesn't mean that all of them are
+                    important for the model to make its decisions, calculating the feature importance and messing around with combinations of them
+                    can result in a better outcome.
+                    </li>
+                    <li>
+                        <span>Cross Validation:</span> Cross validation makes use of different splits in the dataset for training and validation,
+                        this will improve the reliability of the model and reduce the variance, this lets your model generalize better instead of focussing
+                        on finding the answers for the provided dataset.
+                    </li>
+                </ul>
+                <figure class="py-5">
+                    <img class="img-fluid shadow-lg" src="../assets/RandomForestDecisions.png" alt="">
+                    <figcaption class="figure-caption text-right">Visualization of a decision tree</figcaption>
+                </figure>
+            </section>
+                <section>
+                    <h2>Strengthening The Model</h2>
+                    <p>
+                        In order to increase accuracy even more and combat overfitting and bias, I combined my Random Forest model with a
+                        voting classifier. The voting classifier will find the best decisions of the different forests that I made,
+                        it will then combine these decisions into a new model with the goal of improving the accuracy further.
+                    </p>
+                </section>
+            <section>
+                <h2>
+                    Results
+                </h2>
+                <p>
+                    To check the accuracy of my model I used a confusion matrix, this will display how many predictions it made correctly on the
+                    validation set, besides that it will also show false positives and false negatives. For heart disease it would be better to have
+                    false positives than negatives since a positive can always be further tested but a false negative could be fatal.
+                </p>
+                <div class="d-flex justify-content-evenly py-5">
+                    <img class="img-fluid shadow-lg" src="../assets/ConfusionMatrix.png" alt="">
+                    <img class="img-fluid shadow-lg" src="../assets/ConfusionMatrix2.png" alt="">
+                </div>
+            </section>
         </main>
         <footer class="bg-light">
             <p class="text-center p-5">
