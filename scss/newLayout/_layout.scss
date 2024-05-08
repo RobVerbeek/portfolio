@@ -39,4 +39,11 @@
   .pdf{
     min-height: 86vh;
   }
+  @media screen and (min-width: 992px){
+    p{
+      font-size: 1.5rem;
+      line-height: 1.3rem;
+      filter: brightness(1.2);
+    }
+  }
 }
