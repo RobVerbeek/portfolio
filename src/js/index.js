@@ -1,9 +1,9 @@
+var scrolled = false;
+
 window.addEventListener("scroll", function() {
-    var scrollIndicator = document.getElementById("scrollIndicator");
-    if (scrollIndicator) {
-        scrollIndicator.style.display = "none";
+    if (!scrolled) {
+        document.body.classList.add("scrolled");
+        scrolled = true;
     }
 });
-window.addEventListener("scroll", function() {
-    document.body.classList.add("scrolled");
-});
+

@@ -67,7 +67,7 @@ p, a{
   border-top: 15px solid #000; /* Adjust color as needed */
   margin: auto;
   animation: arrowBounce 1s infinite alternate; /* Animation for bouncing */
-  visibility: visible; /* Initially visible */
+  opacity: 1; /* Initially fully visible */
 }
 
 @keyframes arrowBounce {
@@ -80,10 +80,12 @@ p, a{
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  visibility: visible; /* Initially visible */
+  opacity: 1; /* Initially fully visible */
 }
 
 body.scrolled #scrollIndicator {
-  visibility: hidden; /* Hide arrow when scrolled */
+  opacity: 0; /* Fade-out arrow when scrolled */
+  transition: opacity 0.2s ease-in-out;
 }
+
 
