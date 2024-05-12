@@ -45,6 +45,20 @@
   .mainfix{
     width: 80%;
   }
+  .gallery{
+    max-width: 75%;
+  }
+  .gallery:hover{
+    cursor: pointer;
+  }
+  .compete-fix{
+    width: 90%;
+    margin: 0;
+  }
+  .usecase{
+    width: 90vw;
+    height: 500px;
+  }
   @media screen and (min-width: 992px){
     p{
       font-size: 1.5rem;
@@ -59,6 +73,15 @@
     }
     .confusion{
       height: 400px;
+    }
+    .gallery{
+      max-width: 100%;
+    }
+    .compete-fix{
+      width: 50%;
+    }
+    .usecase{
+      width: 100%;
     }
   }
 }
