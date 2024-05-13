@@ -38,8 +38,11 @@ p, a{
 }
 
 .test{
-  background: linear-gradient(to right, $jasmine, $vista);
+  background: linear-gradient(to right, $vista, $jasmine);
   padding: 10px;
+}
+.test{
+  transform: rotateY(180deg);
 }
 
 .card-cover{
