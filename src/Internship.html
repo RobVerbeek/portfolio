@@ -26,6 +26,9 @@
                                 <a class="nav-link" href="index.html#about">About</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" href="Internship.html">Internship</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="index.html#projects">Projects</a>
                             </li>
                         </ul>
@@ -44,10 +47,10 @@
                     <h1 class="">Project Introduction</h1>
                     <p>
                         LanguageTeams, a language school offering group lessons, faced a growing challenge: their manual scheduling process using Excel had become inefficient and error-prone. 
-                        They needed a solution that could automate lesson planning while respecting complex business rules.
+                        They needed a solution that could automate lesson planning while respecting complex business rules. 
                     </p>
                     <p>
-                        To improve the quality of life for the teachers and administrators we needed to replace the chaotic Excel-based scheduling process with a smart, automated system
+                        To improve the quality of life for the teachers and administrators we needed to replace the manual Excel-based scheduling process with a smart, automated system
                         and also provide an application that was easy to use. 
                     </p>
                     <div class="d-flex justify-content-center py-4">
@@ -57,7 +60,7 @@
                         This project was handled with a team of 3 interns, while the other interns focused on the application and user interface.
                     </p>
                     <p>
-                        <span class="fw-bold">My task</span> was to develop an automated scheduling engine capable of generating weekly lesson plans that accounted for complex real-world constraints like teacher availability, 
+                        <span class="fw-bold">My responsibility</span> was to develop an automated scheduling engine capable of generating weekly lesson plans that accounted for complex real-world constraints like teacher availability, 
                         room assignments, group sizes, and course requirements.
                     </p>
 
@@ -91,6 +94,7 @@
                         For more information about the research and the different phases of the project, you can read the project plan documentation.
                     </section>
                     <section class="pb-5">
+                            <div class="d-flex justify-content-center justify-content-md-start gap-1">
                             <a href="assets/Project Plan Rob Verbeek 2025.pdf" target="_blank" class="text-decoration-none">
                             <button type="button" class="btn btn-outline-primary btn-sm px-4 justify-content-end">
                                 View project plan
@@ -101,6 +105,7 @@
                                 Download project plan
                             </button>
                         </a>
+                        </div>
                     </section>
                     <section class="pb-5">
                         <h2>The solution</h2>
@@ -122,12 +127,12 @@
                             Because genetic algorithms are a well-known and reliable solution for scheduling problems, I decided to implement this first and see how far I could take the Agentic AI Planner afterwards.
                         </p>
                         <p>
-                            The Genetic Algorithm Planner was implemented using the DEAP library, which provides a framework for evolutionary algorithms in Python. 
-                            The Agentic AI Planner was built using LangChain and LangGraph, allowing for complex reasoning and decision-making based on natural language inputs.
+                            The Genetic Algorithm Planner was implemented using the <span class="fw-bold">DEAP</span> library, which provides a framework for evolutionary algorithms in Python. 
+                            The Agentic AI Planner was built using <span class="fw-bold">LangChain</span> and <span class="fw-bold">LangGraph</span>, allowing for complex reasoning and decision-making based on natural language inputs.
                         </p>
-                        <div class="d-flex justify-content-between pt-4">
-                            <img class="img-fluid" style="height: 200px;" src="assets/langchain.png" alt="">
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-evenly pt-4">
                             <img class="img-fluid" style="height: 200px;" src="assets/deap_long.webp" alt="">
+                            <img class="img-fluid" style="height: 200px;" src="assets/langchain.png" alt="">
                         </div>
                         <p>
                             The planners were integrated into a Django application, which served as the backend for the LanguageTeams scheduling system. 
@@ -136,7 +141,7 @@
                         <p>
                             For a detailed overview of the implementation you can read the documentation of the project.
                         </p>
-                        <div>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-1">
                         <a href="assets/Realisation_Internship_Rob_Verbeek_2025.pdf" target="_blank" class="text-decoration-none">
                                 <button type="button" class="btn btn-outline-primary btn-sm px-4 justify-content-end">
                                     View realisation documentation
@@ -161,10 +166,10 @@
                             And ultimately, after being approved, the planning was sent to the teachers who could then view their schedule in the application.
                         </p>
                         <img class="img-fluid shadow-lg" src="assets/Planning application.png" alt="">
-                        <p class="pt-4">
+                        <p class="pt-5">
                             The Agentic AI Planner, while still experimental, demonstrated the potential of using large language models for reasoning about complex scheduling tasks. 
                             This opens up new possibilities for future enhancements and adaptations of the scheduling system. 
-                            But the Agentic AI Planner still has issues with the reasoning and decision-making process, which needs to be improved in the future.
+                            However, the Agentic AI Planner still has issues with the reasoning and decision-making process, which needs to be improved in the future.
                         </p>
                         <p>
                             These issues are more of a fundemental problem with the use of LLMs for reasoning about complex tasks, 
@@ -175,43 +180,28 @@
                     </section>
                     <section class="pb-5">
                         <h3>Reflection</h3>
-                        <p>Overall, I'd say this internship was a success, I managed to deliver a working product to the client and during the internship I also learned a lot.</p>
-                        <p>Catering to the customer, making sure you pick a solution which is right for them instead of trying to use the newest most advanced option is something 
-                            I will keep in mind for the future. Often you see that people want to use the newest and most advanced technology, but this is not always the best solution for the problem at hand.
-                            This goes for both clients and developers, as a developer you should always try to find the best solution for the problem,
-                            not the most advanced or newest solution.
+                        <p>
+                            During my internship at B-Robots, I developed an automated scheduling system for LanguageTeams, replacing their manual Excel-based process with a smart, constraint-driven solution.
                         </p>
                         <p>
-                            I also learned a lot about the use of genetic algorithms and how they can be used to solve complex scheduling problems. 
-                            This is a powerful technique that can be used in many different domains, and I am excited to see how it can be applied in the future.
+                            This project helped me grow both technically and professionally. I learned how to apply genetic algorithms to complex planning problems and explored the potential of large language models for reasoning about real-world tasks. I also gained valuable insights into software planning, documentation, and interdisciplinary teamwork.
                         </p>
                         <p>
-                            The project also gave me the opportunity to work with large language models and explore their potential for reasoning about complex tasks. 
-                            This is a rapidly evolving field, and I am excited to see how it will develop in the future.
+                            A key takeaway was the importance of choosing the right solution for the problem which is not necessarily the most advanced one. Developers should always aim to solve the problem in the most effective and sustainable way possible.
                         </p>
                         <p>
-                            Besides the technical skills I learned, I also learned a lot about how information is passed on in a company and how important it is to have good documentation.
-                            How important it is to have a good project plan and how important it is to keep the documentation up to date.
-                            Also how communication is key to a successful project, especially when working with a team of different disciplinaries.
-                            Keeping everyone on the same page and making sure that everyone is aware of the progress and the challenges is crucial for a successful project.
-                        </p>
-                        <p>
-                            Overall, I am very happy with the outcome of this project and I am excited to see how it will be used by LanguageTeams in the future. 
-                            I hope that the work I have done will help them to improve their scheduling process and provide a better experience for their teachers and administrators.
-                        </p>
-                        <p>
-                            Lastly, I would like to thank my internship company B Robots for the opportunity to work on this project and for their support throughout the internship.
+                            I'm proud of the result and thankful for the opportunity. I look forward to seeing how LanguageTeams continues to benefit from this solution.
                         </p>
                         <p>
                             If you want to read more about my reflection on the project, you can read the document linked below.
                         </p>
-                        <div>
-                            <a href="assets/Reflection_Internship_Rob_Verbeek_2025.pdf" target="_blank" class="text-decoration-none">
+                        <div class="d-flex justify-content-center justify-content-md-start gap-1">
+                            <a href="assets/Internship_Reflection_Rob_Verbeek_2025.pdf" target="_blank" class="text-decoration-none">
                                 <button type="button" class="btn btn-outline-primary btn-sm px-4 justify-content-end">
                                     View reflection document
                                 </button>
                             </a>
-                            <a href="assets/Reflection_Internship_Rob_Verbeek_2025.pdf" download="Internship_Reflection_Rob_Verbeek_2025" class="text-decoration-none">
+                            <a href="assets/Internship_Reflection_Rob_Verbeek_2025.pdf" download="Internship_Reflection_Rob_Verbeek_2025" class="text-decoration-none">
                                 <button type="button" class="btn btn-outline-primary btn-sm px-4 justify-content-end">
                                     Download reflection document
                                 </button>
